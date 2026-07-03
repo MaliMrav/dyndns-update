@@ -2,7 +2,6 @@
 
 **A Dynamic DNS updater that does one thing well: keeps your DNS records accurate without unnecessary updates.**
 
-A lightweight Dynamic DNS updater for Linux focused on reliable
-combined IPv4/IPv6 updates for DynDNS-compatible services.
+Designed for Linux, `dyndns-update` verifies published DNS records before contacting the Dynamic DNS provider, updating IPv4 and IPv6 atomically only when required.
 
-Status: Early development.
+> Status: Early development.
