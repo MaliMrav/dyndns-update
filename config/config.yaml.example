@@ -6,3 +6,36 @@
 #   Vladimir Lekic
 #   ChatGPT (OpenAI)
 ###############################################################################
+
+credentials:
+  username: !secret ddns_username
+  password: !secret ddns_password
+
+network:
+  timeout: 10
+  retries: 3
+
+  ipv4_services:
+    - https://api.ipify.org
+    - https://ipv4.icanhazip.com
+
+  ipv6_services:
+    - https://api6.ipify.org
+    - https://ipv6.icanhazip.com
+
+dns:
+  nameserver: 1.1.1.1
+
+dyndns:
+  url: https://members.dyndns.org/v3/update
+  user_agent: "DynHost/1.0 vlad@lekic.net"
+
+hosts:
+
+  - hostname: lekic-gw.dyndns.tv
+
+    enabled: true
+
+    update:
+      ipv4: true
+      ipv6: true
